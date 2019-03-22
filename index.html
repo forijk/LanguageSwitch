@@ -5,21 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-    div {
-      width: 100px;
-      height: 100px;
-      border: 1px solid red;
-    }
-  </style>
 </head>
 <body>
-  <button>english</button>
-<div class="content">
-        <h3 class="yes">你好</h3>
-        <span class="yes">六月</span>
-</div>
+  <select id="language">
+      <option value="zh">中文简体</option>
+      <option value="en">English</option>
+  </select>
+  <div id="content"> 
+    <div> 
+        <label id="label_username"></label> 
+        <input type="text" id="username"></input> 
+    </div> 
+    <div> 
+        <label id="label_password"></label> 
+        <input type="password" id="password"></input> 
+    </div> 
+    <input type="button" id="button_login"/> 
+  </div>
 </body>
 </html>
-<script src="./jquery.js"></script>
-<script src="./index.js"></script>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.i18n.properties-1.0.9.js"></script>
+<script type="text/javascript" src="./language.extensions.js"></script>

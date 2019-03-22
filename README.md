@@ -1,2 +1,2 @@
 # LanguageSwitch
-language switch
+Language Switch Demo.
