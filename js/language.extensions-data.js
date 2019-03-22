@@ -18,7 +18,6 @@ $(function(){
 	$('#button_switch').click(function(){
 		var LanguageValue = $(this).val() === 'English' ? 'zh' : 'en';
 		$.cookie('currentLanguage', LanguageValue, { expires: 30, path: '/' });
-		// 同步 select 控件
 		$('#language').val(LanguageValue);
 		languageSwitch(LanguageValue);
 		window.location.reload();
