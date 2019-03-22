@@ -5,7 +5,6 @@ $(function(){
 		settingLanguage = 'zh';
 		$('#language').val('zh');
 		$.cookie('currentLanguage', 'zh', { expires: 30, path: '/' });
-		console.log('设置了');
 	} else {
 		settingLanguage = currentLanguage;
 		$('#language').val(currentLanguage);

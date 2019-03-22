@@ -38,6 +38,6 @@ Language Switch Demo.
 
 4. 实现思路
 
--  初始化页面的时候去当前域的cookie里面取当前浏览器保存语言的cookie，根据取到的当前语言版本去初始化国际化组件，然后初始化select组件的选中值
+-  初始化页面的时候去当前域的cookie里面取当前浏览器保存语言的cookie，根据取到的当前语言版本去初始化国际化组件，然后初始化select或button组件的值。
 -  
 - 注册select组件的change事件，根据当前选中的语言，更新cookie里面的语言信息，然后刷新页面。
