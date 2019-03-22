@@ -4,15 +4,15 @@
 
 公司设备 EQUIPMENT Equipment 
 
-公司荣誉 GLORIES Glories 
+公司荣誉 GLORIES glories 
 
-企业文化 CULTURE Culture 
+企业文化 CULTURE culture 
 
-产品展示 PRODUCT Product 
+产品展示 PRODUCT product 
 
 资质认证 quality certification 
 
-企业规模 SCALE Scale 
+企业规模 SCALE scale 
 
 营销网络 Sales Network 
 
