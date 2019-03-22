@@ -1,9 +1,11 @@
 $(function(){
-  var LanguageValue = null;
   $('#language').change(function(){
-    var obj = document.getElementById('language');
-    var index = obj.selectedIndex;
-    LanguageValue = obj.options[index].value;
+		var LanguageValue = $(this).val();
+    languageSwitch(LanguageValue);
+	});
+	$('#button_switch').click(function(){
+		var LanguageValue = $(this).val() === 'English' ? 'zh' : 'en';
+		console.log(LanguageValue);
     languageSwitch(LanguageValue);
   });
   function languageSwitch(lang) {
