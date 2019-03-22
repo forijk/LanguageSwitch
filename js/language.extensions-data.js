@@ -1,13 +1,28 @@
 $(function(){
+	var currentLanguage = $.cookie('currentLanguage');
+	var settingLanguage = null;
+	if (!currentLanguage) {
+		settingLanguage = 'zh';
+		$('#language').val('zh');
+		$.cookie('currentLanguage', 'zh', { expires: 30, path: '/' });
+		console.log('设置了');
+	} else {
+		settingLanguage = currentLanguage;
+		$('#language').val(currentLanguage);
+	}
   $('#language').change(function(){
 		var LanguageValue = $(this).val();
-    languageSwitch(LanguageValue);
+		$.cookie('currentLanguage', LanguageValue, { expires: 30, path: '/' });
+		languageSwitch(LanguageValue);
+		window.location.reload()
 	});
 	$('#button_switch').click(function(){
 		var LanguageValue = $(this).val() === 'English' ? 'zh' : 'en';
+		$.cookie('currentLanguage', LanguageValue, { expires: 30, path: '/' });
 		// 同步 select 控件
 		$('#language').val(LanguageValue);
-    languageSwitch(LanguageValue);
+		languageSwitch(LanguageValue);
+		window.location.reload();
   });
   function languageSwitch(lang) {
     jQuery.i18n.properties({
@@ -43,5 +58,5 @@ $(function(){
       }
   });
   }
-    languageSwitch('zh');
+    languageSwitch(settingLanguage);
 });
